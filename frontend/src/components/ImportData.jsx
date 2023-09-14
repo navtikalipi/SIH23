@@ -42,7 +42,7 @@ const ImportData = () => {
           type="checkbox"
           id="unitCheckbox"
           checked={unitChecked}
-          
+
           onChange={() => setUnitChecked(!unitChecked)}
         />
         <label htmlFor="unitCheckbox" className='ml-1'>Change to units for denoising</label>

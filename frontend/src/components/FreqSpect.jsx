@@ -7,7 +7,7 @@ const FreqSpect = () => {
       <div className="mt-4">
         <h2 className="text-lg font-bold">Dominant Frequency Analysis</h2>
 
-        
+
 
         {/* Manual choose of ...
         <div className="mt-4">

@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes  } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import Upload from './pages/Upload';
 import Output from './pages/Output';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import InputPage from './pages/InputPage';
-
 
 
 function App() {
@@ -21,7 +19,6 @@ function App() {
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/input" element={<InputPage/>} />
-          <Route path="/navbar" element={<Navbar/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
         </Routes>
