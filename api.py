@@ -15,19 +15,19 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 # # Configure CORS settings
-# origins = [
-#     "http://localhost:3000",
-#       "http://localhost:3000/input"  # Add your frontend origin(s) here
-#     # Add more origins if needed
-# ]
+origins = [
+    "http://localhost:3000",
+      "http://localhost:3000/input"  # Add your frontend origin(s) here
+    # Add more origins if needed
+]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],  # You can restrict HTTP methods if needed
-#     allow_headers=["*"],  # You can restrict headers if needed
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # You can restrict HTTP methods if needed
+    allow_headers=["*"],  # You can restrict headers if needed
+)
 # AWS_ACCESS_KEY_ID = settings.AWS_ACCESS_KEY_ID
 # AWS_SECRET_ACCESS_KEY = settings.AWS_SECRET_ACCESS_KEY
 # print(AWS_ACCESS_KEY_ID , AWS_SECRET_ACCESS_KEY)
