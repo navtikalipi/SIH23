@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom'
 import { useAuth } from '../AuthContext';
+//import logo from '../components/images/logo.png';
 
 const Navbar = () => {
   const {state,dispatch} = useAuth()
@@ -49,7 +50,7 @@ const Navbar = () => {
       {state.isAuthenticated===false?
       (<nav className="bg-darker p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white font-bold text-lg">
+        <Link to="/logo" className="text-white font-bold text-lg">
         Logo
         </Link>
         <div className="lg:hidden">
